@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fotos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="theme-color" content="rgb(92, 125, 161)">
+
+
+</head>
+
+<body onload="myFunction()">
+  <div class="foto-grid">
+    <div class="grid-item navigation">
+      <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="#" class="active">Fotos</a>
+        <a href="projekte.html" class="">Projekte</a>
+        <a href="ausruestung.html">Ausr&uuml;stung</a>
+        <a href="uebermich.html">&Uuml;ber mich</a>
+
+      </div>
+    </div>
+    <div class="grid-item menu">
+      <div id="filtercontainer" >
+        <!-- <button class="btn" onclick="filterSelection('all')">Alle anzeigen</button> -->
+        <button class="btn active" onclick="filterSelection('kilarney')">Kilarney</button>
+        <button class="btn" onclick="filterSelection('moher')">Cliffs of Moher</button>
+        <button class="btn" onclick="filterSelection('dublin')">Dublin</button>
+        <button class="btn" onclick="filterSelection('burren')">The Burren</button>
+      </div>
+    </div>
+    <div class="grid-item main">
+      <div class="" id="loader"></div>
+      <div class="grid-foto-container animate-bottom" id="myDiv" >
+        <div class="grid-foto dublin" >
+          <div class="bild " style="background-image: url('images/irland/Dublin/IMG_0296-2.jpg'); ">
+            <!-- <img src="images/irland/Dublin/IMG_0296-2.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto dublin">
+          <div class="bild" style="background-image: url('images/irland/Dublin/IMG_0312.jpg');">
+            <!-- <img src="images/irland/Dublin/IMG_0312.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto dublin">
+          <div class="bild" style="background-image: url('images/irland/Dublin/IMG_0342.jpg');">
+            <!-- <img src="images/irland/Dublin/IMG_0342.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto dublin">
+          <div class="bild" style="background-image: url('images/irland/Dublin/IMG_0628.jpg');">
+            <!-- <img src="images/irland/Dublin/IMG_0628.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto dublin">
+          <div class="bild" style="background-image: url('images/irland/Dublin/IMG_0962.jpg');">
+            <!-- <img src="images/irland/Dublin/IMG_0962.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto dublin">
+          <div class="bild" style="background-image: url('images/irland/Dublin/IMG_1010.jpg');">
+            <!-- <img src="images/irland/Dublin/IMG_1010.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto kilarney">
+          <div class="bild" style="background-image: url('images/irland/Kilarney/IMG_0003.jpg');">
+            <!-- <img src="images/irland/Kilarney/IMG_0003.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto kilarney">
+          <div class="bild" style="background-image: url('images/irland/Kilarney/IMG_0010.jpg');">
+            <!-- <img src="images/irland/Kilarney/IMG_0010.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto kilarney">
+          <div class="bild" style="background-image: url('images/irland/Kilarney/IMG_0019.jpg');">
+            <!-- <img src="images/irland/Kilarney/IMG_0019.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto kilarney">
+          <div class="bild" style="background-image: url('images/irland/Kilarney/IMG_0043.jpg');">
+            <!-- <img src="images/irland/Kilarney/IMG_0043.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto kilarney">
+          <div class="bild" style="background-image: url('images/irland/Kilarney/IMG_1276.jpg');">
+            <!-- <img src="images/irland/Kilarney/IMG_1276.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto moher">
+          <div class="bild" style="background-image: url('images/irland/Moher/IMG_0048.jpg');">
+            <!-- <img src="images/irland/Moher/IMG_0048.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto moher">
+          <div class="bild" style="background-image: url('images/irland/Moher/IMG_0074.jpg');">
+            <!-- <img src="images/irland/Moher/IMG_0074.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto moher">
+          <div class="bild" style="background-image: url('images/irland/Moher/IMG_0135.jpg');">
+            <!-- <img src="images/irland/Moher/IMG_0135.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto moher">
+          <div class="bild" style="background-image: url('images/irland/Moher/IMG_0190.jpg');">
+            <!-- <img src="images/irland/Moher/IMG_0190.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto moher">
+          <div class="bild" style="background-image: url('images/irland/Moher/IMG_0210.jpg');">
+            <!-- <img src="images/irland/Moher/IMG_0210.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto moher">
+          <div class="bild" style="background-image: url('images/irland/Moher/moher.jpg');">
+            <!-- <img src="images/irland/Moher/moher.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto burren">
+          <div class="bild" style="background-image: url('images/irland/Burren/IMG_0059.jpg');">
+            <!-- <img src="images/irland/Burren/IMG_0059.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto burren">
+          <div class="bild" style="background-image: url('images/irland/Burren/IMG_0060.jpg');">
+            <!-- <img src="images/irland/Burren/IMG_0060.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto burren">
+          <div class="bild" style="background-image: url('images/irland/Burren/IMG_0069.jpg');">
+            <!-- <img src="images/irland/Burren/IMG_0069.jpg" alt=""> -->
+          </div>
+        </div>
+        <div class="grid-foto burren">
+          <div class="bild" style="background-image: url('images/irland/Burren/IMG_0130.jpg');">
+            <!-- <img src="images/irland/Burren/IMG_0130.jpg" alt=""> -->
+          </div>
+        </div>
+
+        <!--Ende Fotos  -->
+      </div>
+    </div>
+    <div class="grid-item footer"><p>&copy; Henning Hoffbuhr<p></div>
+    <div class="grid-item cover">
+      <div class="covertext">
+        <h2>Henning Hoffbuhr</h2>
+        <p>Fotografie, Reisen und mehr</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  filterSelection("kilarney"); // Execute the function and show all columns
+
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("grid-foto");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1)
+      {
+        w3AddClass(x[i], "show");
+      }
+    }
+  }
+
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("filtercontainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[1].className = current[1].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
+  var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "grid";
+}
+  </script>
+</body>
+
+</html>
